@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Min Speldatabase</h1>
+
+      <h3>Logg inn</h3>
+      <div>
+        <label>Epost:</label><br />
+        <input id="email" type="email" />
+      </div>
+      <div>
+        <label>Passord:</label><br />
+        <input id="password" type="password" />
+      </div>
+
+      <div class="signUpBox">
+        <button id="btnCreate" onclick="login()">Logg inn</button>
+      </div>
+
+      <div id="info">
+        <p>
+          Dersom du ikkje har ein bruker,
+          <a href="signup.html">opprett ein her</a>
+        </p>
+      </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>

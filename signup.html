@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <main>
+        <h1>Registrer deg</h1>
+        
+        <div class="top-left-button">
+            <button id="cancel" onclick="cancel()">Avbryt</button>
+        </div>
+        
+        <div>
+            <label>Fornavn:</label>
+            <input id="firstname" type="text">
+        </div>
+
+        <div>
+            <label>Etternavn:</label>
+            <input id="lastname" type="text">
+        </div>
+
+        <div>
+            <label>Adresse:</label>
+            <input id="address" type="text">
+        </div>
+
+        <div>
+            <label>Postnr:</label>
+            <input id="zip" type="number" maxlength="4">
+        </div>
+
+        <div>
+            <label>Poststed:</label>
+            <input id="city" type="text">
+        </div>
+
+        <div>
+            <label>E-post:</label>
+            <input id="email" type="email">
+        </div>
+
+        <div>
+            <label>Passord:</label>
+            <input id="password" type="password">
+        </div>
+
+        <div class="signUpBox">
+            <button id="btnCreate" onClick="signUp()">Opprett bruker</button>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+    </main>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    <script src="js/signup.js"></script>
+    
+</body>
+</html>

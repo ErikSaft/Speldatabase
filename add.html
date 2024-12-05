@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/add.css" />
+    <title>Legg til</title>
+  </head>
+
+  <body>
+    <div class="top-left-button">
+      <button onclick="goHome()">Heim</button>
+    </div>
+
+    <main>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="title">Tittel:</label>
+          <input id="title" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="year">År:</label>
+          <input id="year" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="image">Bilde-URL:</label>
+          <input id="image" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="genre">Sjanger:</label>
+          <input id="genre" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="rating">Vurdering:</label>
+          <input id="rating" type="text" />
+        </div>
+      </div>
+      <button id="btnCreate" onclick="addItem()">Legg til</button>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth-compat.js"></script>
+
+    <script src="js/add.js"></script>
+  </body>
+</html>

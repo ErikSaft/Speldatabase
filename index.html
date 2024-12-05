@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Speldatabase</title>
+  </head>
+
+  <body>
+    <h1>SPELDATABASE</h1>
+
+    <div class="top-left-button">
+      <button id="btnLogout" onclick="logout()">Logg ut</button>
+    </div>
+
+    
+    <div class="buttonContainer">
+      <div class="buttonBox">
+        <a href="list.html">
+          <button>Lista over spel</button>
+        </a>
+      </div>
+      <div class="buttonBox">
+        <a href="add.html">
+          <button>Legg til</button>
+        </a>
+      </div>
+      <div class="buttonBox">
+        <a href="remove.html">
+          <button>Fjern</button>
+        </a>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth-compat.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/logout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/remove.css" />
+    <title>Fjern/Oppdater</title>
+  </head>
+  <body>
+    <div class="header">
+      <button onclick="goHome()">Heim</button>
+      <h2>FJERN/OPPDATER</h2>
+      <input
+        type="text"
+        id="search"
+        placeholder="Søk"
+        oninput="searchGames()"
+      />
+    </div>
+
+    <div class="game-list" id="gameList"></div>
+
+    <div id="updateForm" class="update-form" style="display: none">
+      <h3>Oppdater informasjon</h3>
+      <label for="updateTitle">Tittel:</label>
+      <input type="text" id="updateTitle" /><br />
+
+      <label for="updateYear">År:</label>
+      <input type="text" id="updateYear" /><br />
+
+      <label for="updateImage">Bilde-URL:</label>
+      <input type="text" id="updateImage" /><br />
+
+      <label for="updateGenre">Sjanger:</label>
+      <input type="text" id="updateGenre" /><br />
+
+      <label for="updateRating">Vurdering:</label>
+      <input type="text" id="updateRating" /><br />
+
+      <button onclick="submitUpdate()">Oppdater</button>
+      <button onclick="cancelUpdate()">Avbryt</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth-compat.js"></script>
+    <script src="js/remove.js"></script>
+  </body>
+</html>
